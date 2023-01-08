@@ -1,0 +1,39 @@
+/*  HEADER con BOOTSTRAP personalizado  */
+header {
+    border-bottom: solid 3px $color-verde;
+
+    .bg-beige {
+        background-color: $color-beige;
+    }
+
+    .navbar-brand-logo {
+        height: 55px;
+        width: 110px;
+    }
+
+    .navbar-brand-logo:hover {
+        transform: scale(1.1);
+    }
+
+    .navbar-beige .navbar-nav .nav-link {
+        color: $color-verde;
+        font-family: $font-1;
+    }
+
+    .navbar-beige .navbar-nav .nav-link:hover {
+        color: $color-naranja;
+    }
+
+    .navbar-toggler-barras {
+        font-size: 40px;
+        color: $color-verde;
+        align-self: center;
+        justify-self: right;
+        padding: 10px;
+        opacity: 100%;
+        text-justify: center;
+        border: solid 2px rgba(91, 134, 0, 0.4);
+        border-radius: 20%;
+    }
+
+}

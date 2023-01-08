@@ -1,0 +1,52 @@
+/* Para importar fuentes de Google Fonts (Mitr y Anton)*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mitr&family=Montserrat+Alternates&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+//    Defino paleta de colores      
+$color-beige: rgb(238, 229, 212);
+$color-beige-claro: rgb(249 245 239);
+$color-marron: rgb(80, 60, 31);
+$color-naranja: rgb(240, 125, 16);
+$color-verde: rgb(91, 134, 0);
+
+//  Defino fuentes
+$font-general: Verdana, Geneva, Tahoma, sans-serif;
+$font-1: 'Mitr', sans-serif, cursive;
+$font-2: 'Anton', sans-serif;
+
+//Defino vectores y mapas generales
+$serviciosAlborada: cultura, fisico, plastica, recreativa;
+
+$fotosAlborada: (
+    cultura: 3,
+    fisico: 3,
+    /*plastica: 2,
+    recreativa: 4,*/
+);
+$cultura: (
+    1: Carnaval,
+    2: Exodo Jujeño,
+    3: Pacha Mama,
+);
+$fisico: (
+    1: Tenis,
+    2: Pileta,
+    3: Futbol
+);
+/* Inicializo margin - padding y box-sizin para todo el sitio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  Sección común en todas las páginas   */
+.section__barra-titulo {
+    height: 40px;
+    background-color: $color-verde;
+    color: $color-naranja;
+    text-align: center;
+    font-size: 18px;
+    font-family: $font-1;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}

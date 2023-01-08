@@ -1,0 +1,36 @@
+/*  FOOTER   */
+footer {
+    background-color: $color-naranja;
+    height: 60px;
+    width: 100%;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    border-top: solid 3px;
+    border-color: $color-verde;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .footer__copyright {        
+        text-align: center;
+        font-family: $font-1;
+        font-size: 16px;
+        color: $color-marron;
+    }
+
+    .footer__social {
+        a {
+            color: $color-verde;
+            font-size: 20px;
+            text-shadow: 2px 2px $color-marron;
+            word-spacing: 5px;
+            padding-right: 10px;
+        }
+
+        a:hover {
+            font-size: 25px;
+        }
+    }
+}
