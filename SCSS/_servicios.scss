@@ -1,0 +1,84 @@
+/*  SERVICIOS   */
+.servicios {
+
+    ul {
+        list-style-type: none;
+
+        li {
+            font-family: $font-1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    h2 {
+        font-family: $font-1;
+        font-size: 30px;
+        text-decoration: underline;
+        text-align: center;
+        color: $color-verde;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .servicios__row-rev {
+        flex-direction: row-reverse;
+    }
+
+    .servicios__carousel {
+        align-self: center;
+    }
+
+    //fotos carousel    
+    @each $sector-map,
+    $sector-nombre in $fotosAlborada {
+        $i : 1;
+
+        @each $nombre-archivo,
+        $descripcion-archivo in $sector-map {
+            .#{$sector-nombre}-item#{$i} {
+                background-image: url(../Img/#{$nombre-archivo});
+                alt: #{$descripcion-archivo};
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                $i : ($i + 1);
+            }
+        }
+    }
+
+    .foto {
+        height: 250px;
+    }
+
+    $colores-serv: (
+        verde: $color-verde,
+        naranja: $color-naranja,
+    );
+
+    @each $nombre-color,
+    $color-serv in $colores-serv {
+
+        .servicios__ul#{$nombre-color} {
+            align-self: center;
+            text-shadow: 1px 2px #{$color-serv};
+
+            li {
+                background: url("../Img/manito_#{$nombre-color}.png") no-repeat left top;
+                background-size: 30px;
+                padding-left: 30px;
+            }
+        }
+    }
+
+    marquee p {
+        font-size: 16px;
+    }
+}
