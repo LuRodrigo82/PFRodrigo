@@ -305,6 +305,50 @@ footer .footer__social a:hover {
   font-size: 16px;
 }
 
+#galeriaFotos .foto-galeria {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  padding: 2px;
+}
+#galeriaFotos .foto1 {
+  background-image: url(../Img/img1_cultura.jpg);
+}
+#galeriaFotos .foto2 {
+  background-image: url(../Img/img2_cultura.jpg);
+}
+#galeriaFotos .foto3 {
+  background-image: url(../Img/img3_cultura.jpg);
+}
+#galeriaFotos .foto4 {
+  background-image: url(../Img/img1_fisico.jpg);
+}
+#galeriaFotos .foto5 {
+  background-image: url(../Img/img2_fisico.jpg);
+}
+#galeriaFotos .foto6 {
+  background-image: url(../Img/img3_fisico.jpg);
+}
+#galeriaFotos .foto7 {
+  background-image: url(../Img/img1_plastica.jpg);
+}
+#galeriaFotos .foto8 {
+  background-image: url(../Img/img2_plastica.jpg);
+}
+#galeriaFotos .foto9 {
+  background-image: url(../Img/img1_recreativa.jpg);
+}
+#galeriaFotos .foto10 {
+  background-image: url(../Img/img2_recreativa.jpg);
+}
+#galeriaFotos .foto11 {
+  background-image: url(../Img/img3_recreativa.jpg);
+}
+#galeriaFotos .foto12 {
+  background-image: url(../Img/img4_recreativa.jpg);
+}
+
 /*  MEDIA QUERIES   */
 @media (width > 600px) {
   main .portada__titulo h1 {

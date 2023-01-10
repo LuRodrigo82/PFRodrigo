@@ -1,0 +1,20 @@
+#galeriaFotos{
+    .foto-galeria {    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px; 
+        padding: 2px;   
+    }
+    $i : 1;
+    @each $sector-map,
+    $sector-nombre in $fotosAlborada {
+        @each $nombre-archivo,
+        $descripcion-archivo in $sector-map {
+            .foto#{$i} {
+                background-image: url(../Img/#{$nombre-archivo});
+            }
+            $i : ($i + 1);
+        }        
+    }
+}    
