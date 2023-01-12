@@ -310,7 +310,7 @@ footer .footer__social a:hover {
   background-repeat: no-repeat;
   background-position: center;
   height: 250px;
-  padding: 2px;
+  border-radius: 5%;
 }
 #galeriaFotos .foto1 {
   background-image: url(../Img/img1_cultura.jpg);
@@ -347,6 +347,47 @@ footer .footer__social a:hover {
 }
 #galeriaFotos .foto12 {
   background-image: url(../Img/img4_recreativa.jpg);
+}
+
+#requisitos .ImagenAlcance {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 40% 60%;
+  padding: 20px 20px 20px 20px;
+  justify-content: center;
+  align-content: center;
+}
+#requisitos .ImagenAlcance .alcanceAlborada {
+  grid-column: 2/3;
+  background-color: rgba(53, 74, 84, 0.5333333333);
+  width: 100%;
+}
+#requisitos .ImagenAlcance p {
+  font-size: 30px;
+  text-align: left;
+  font-family: "Mitr", sans-serif, cursive;
+  color: rgb(238, 229, 212);
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 100px 30px 150px 30px;
+  letter-spacing: 3px;
+}
+#requisitos .ImagenAlcance p::first-letter {
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+#requisitos #alcance1 {
+  background-image: url("../img/imgMental.jpg");
+}
+#requisitos #alcance2 {
+  background-image: url("../img/imgMotriz.jpg");
 }
 
 /*  MEDIA QUERIES   */
