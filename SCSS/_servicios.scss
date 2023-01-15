@@ -2,6 +2,7 @@
 .servicios {
 
     ul {
+        margin-top: 20px;
         list-style-type: none;
 
         li {
@@ -13,14 +14,6 @@
         li:not(:last-child) {
             margin-bottom: 15px;
         }
-    }
-
-    h2 {
-        font-family: $font-1;
-        font-size: 30px;
-        text-decoration: underline;
-        text-align: center;
-        color: $color-verde;
     }
 
     .carousel-inner img {
@@ -44,11 +37,9 @@
         @each $nombre-archivo,
         $descripcion-archivo in $sector-map {
             .#{$sector-nombre}-item#{$i} {
+                @extend .imagen-gral;
                 background-image: url(../Img/#{$nombre-archivo});
                 alt: #{$descripcion-archivo};
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
                 $i : ($i + 1);
             }
         }
@@ -77,8 +68,13 @@
             }
         }
     }
+}
 
-    marquee p {
+marquee {
+    p {
+        color: $color-marron;
+        font-family: $font-general;
+        font-weight: bold;
         font-size: 16px;
     }
 }

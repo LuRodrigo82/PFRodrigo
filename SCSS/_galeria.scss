@@ -1,10 +1,15 @@
 #galeriaFotos{
     .foto-galeria {    
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        @extend .imagen-gral;        
         height: 250px;         
-        border-radius: 5%;
+        border-radius: 5%;        
+    }
+    .foto-galeria:hover{
+        animation-name: agrandar;
+        animation-iteration-count:1;
+        animation-timing-function: cubic-bezier(0, 0.37, 0.58, 1);
+        animation-duration: 1.5s;  
+        animation-fill-mode: forwards;       
     }
     $i : 1;
     @each $sector-map,

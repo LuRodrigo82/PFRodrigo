@@ -41,16 +41,32 @@ $fotosAlborada: (
     $plastica: 'plastica',
     $recreacion: 'recreacion'
 );
-
+$imgQuienes-map: (
+    "discapacidad_mental.jpg" : "Discapacidad Mental", 
+    "inclusion-manos.jpg" : "Inclusion", 
+    "imgMotriz.jpg" : "Discapacidad"
+);
 /* Inicializo margin - padding y box-sizin para todo el sitio */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+main {    
+    background-color: $color-beige-claro;
+}
 /*  Sección común en todas las páginas   */
-.section__barra-titulo {
+.seccion-contenido{
+    h2 {
+    color: $color-verde;
+    font-family: $font-1;
+    font-size: 30px;
+    text-align: center;        
+    text-shadow: 1px 2px $color-marron;
+    text-transform: uppercase;
+    }
+}
+.barra-titulo {
     height: 40px;
     background-color: $color-verde;
     color: $color-naranja;
@@ -59,4 +75,10 @@ $fotosAlborada: (
     font-family: $font-1;
     text-shadow: 2px 2px black;
     text-transform: uppercase;
+}
+/*Configuración general de imágenes*/
+.imagen-gral {    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

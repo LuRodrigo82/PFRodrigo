@@ -16,8 +16,8 @@ footer {
     .footer__copyright {        
         text-align: center;
         font-family: $font-1;
-        font-size: 16px;
-        color: $color-marron;
+        font-size: 0.8rem;
+        color: rgba($color: $color-marron, $alpha: 0.7);
     }
 
     .footer__social {
