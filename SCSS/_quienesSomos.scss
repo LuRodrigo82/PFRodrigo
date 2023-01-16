@@ -5,7 +5,7 @@
     @each $nombre-archivo,
     $descripcion-archivo in $imgQuienes-map {
         #quienes-item#{$i} {
-            background-image: url("../img/#{$nombre-archivo}");
+            background-image: url(../img/#{$nombre-archivo});
             $i: ($i + 1);
         }
     }
