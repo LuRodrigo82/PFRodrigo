@@ -1,11 +1,11 @@
 #quienesSomos {
-    //fotos carousel    
+    //fotos quienes somos    
     $i: 1;
 
     @each $nombre-archivo,
     $descripcion-archivo in $imgQuienes-map {
         #quienes-item#{$i} {
-            background-image: url(../img/#{$nombre-archivo});
+            background-image: url(../Img/#{$nombre-archivo});
             $i: ($i + 1);
         }
     }
