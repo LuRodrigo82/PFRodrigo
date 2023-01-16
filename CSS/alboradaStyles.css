@@ -284,13 +284,13 @@ marquee p {
 }
 
 #quienesSomos #quienes-item1 {
-  background-image: url("../img/discapacidad_mental.jpg");
+  background-image: url("../img/img_mental.jpg");
 }
 #quienesSomos #quienes-item2 {
-  background-image: url("../img/inclusion-manos.jpg");
+  background-image: url("../img/img_manos.jpg");
 }
 #quienesSomos #quienes-item3 {
-  background-image: url("../img/imgMotriz.jpg");
+  background-image: url("../img/img_motriz.jpg");
 }
 #quienesSomos .imagenQuienes {
   background-attachment: fixed;
