@@ -18,18 +18,19 @@
         justify-content: space-between;
     }
 
-    .portada__titulo h1 {
-        padding-top: 20px;
-        color: $color-naranja;
-        font-size: 40px;
-    }
-
-    .portada__titulo h2 {
-        padding-bottom: 50px;
-        color: $color-verde;
-        font-size: 25px;
-
-        animation-delay: 1.5s;
-        animation-duration: 2s;
+    .portada__titulo {
+        h1 {
+            padding-top: 20px;
+            color: $color-naranja;
+            font-size: 40px;
+        }
+        h2 {
+            padding-bottom: 50px;
+            color: $color-verde;
+            font-size: 25px;
+    
+            animation-delay: 1.5s;
+            animation-duration: 2s;
+        }
     }
 }

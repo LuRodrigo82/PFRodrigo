@@ -9,19 +9,19 @@ header {
     .navbar-brand-logo {
         height: 55px;
         width: 110px;
-    }
 
-    .navbar-brand-logo:hover {
-        transform: scale(1.1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .navbar-beige .navbar-nav .nav-link {
         color: $color-verde;
         font-family: $font-1;
-    }
 
-    .navbar-beige .navbar-nav .nav-link:hover {
-        color: $color-naranja;
+        &:hover {
+            color: $color-naranja;
+        }
     }
 
     .navbar-toggler-barras {
@@ -35,5 +35,4 @@ header {
         border: solid 2px rgba(91, 134, 0, 0.4);
         border-radius: 20%;
     }
-
 }

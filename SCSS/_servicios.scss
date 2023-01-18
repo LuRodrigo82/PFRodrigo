@@ -9,10 +9,9 @@
             font-family: $font-1;
             font-size: 20px;
             font-weight: bold;
-        }
-
-        li:not(:last-child) {
-            margin-bottom: 15px;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
         }
     }
 
