@@ -2,50 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mitr&family=Montserrat+Alternates&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-//    Defino paleta de colores      
-$color-beige: rgb(238, 229, 212);
-$color-beige-claro: rgb(249 245 239);
-$color-marron: rgb(80, 60, 31);
-$color-naranja: rgb(240, 125, 16);
-$color-verde: rgb(91, 134, 0);
 
-//  Defino fuentes
-$font-general: Verdana, Geneva, Tahoma, sans-serif;
-$font-1: 'Mitr', sans-serif, cursive;
-$font-2: 'Anton', sans-serif;
-
-//Defino vectores y mapas generales
-$cultura: (
-    'img1_cultura.jpg': 'Carnaval',
-    'img2_cultura.jpg': 'Exodo Jujeño',
-    'img3_cultura.jpg': 'Pacha Mama',
-);
-$fisico: (
-    'img1_fisico.jpg': 'Tenis',
-    'img2_fisico.jpg': 'Pileta',
-    'img3_fisico.jpg': 'Futbol'
-);
-$plastica: (
-    'img1_plastica.jpg': 'Feria artesanal 1',
-    'img2_plastica.jpg': 'Feria artesanal 2'
-);
-$recreacion: (
-    'img1_recreativa.jpg': 'Salida Recreativa 1',
-    'img2_recreativa.jpg': 'Salida Recreativa 2',
-    'img3_recreativa.jpg': 'Salida Recreativa 3',
-    'img4_recreativa.jpg': 'Salida Recreativa 4'
-);
-$fotosAlborada: (
-    $cultura: 'cultura',
-    $fisico: 'fisico',
-    $plastica: 'plastica',
-    $recreacion: 'recreacion'
-);
-$imgQuienes-map: (
-    'img_mental.jpg' : 'Discapacidad Mental', 
-    'img_manos.jpg' : 'Inclusion', 
-    'img_motriz.jpg' : 'Discapacidad'
-);
 /* Inicializo margin - padding y box-sizin para todo el sitio */
 * {
     margin: 0;
