@@ -35,7 +35,7 @@ main {
 }
 
 /*Configuración general de imágenes*/
-.imagen-gral, #quienesSomos .card .card-body .staff, #quienesSomos .imagenQuienes, #galeriaFotos .foto-galeria, .servicios .recreacion-item4, .servicios .recreacion-item3, .servicios .recreacion-item2, .servicios .recreacion-item1, .servicios .plastica-item2, .servicios .plastica-item1, .servicios .fisico-item3, .servicios .fisico-item2, .servicios .fisico-item1, .servicios .cultura-item3, .servicios .cultura-item2, .servicios .cultura-item1, #portada .portada__img {
+.imagen-gral, #quienesSomos .imagenQuienes, #galeriaFotos .foto-galeria, .servicios .recreacion-item4, .servicios .recreacion-item3, .servicios .recreacion-item2, .servicios .recreacion-item1, .servicios .plastica-item2, .servicios .plastica-item1, .servicios .fisico-item3, .servicios .fisico-item2, .servicios .fisico-item1, .servicios .cultura-item3, .servicios .cultura-item2, .servicios .cultura-item1, #portada .portada__img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -235,9 +235,15 @@ marquee p {
   font-size: 16px;
 }
 
+#galeriaFotos .row {
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
 #galeriaFotos .foto-galeria {
   height: 250px;
   border-radius: 5%;
+  margin: 10px;
+  background-color: rgb(249, 245, 239);
 }
 #galeriaFotos .foto-galeria:hover {
   animation-name: agrandar;
@@ -327,24 +333,34 @@ marquee p {
 }
 #quienesSomos h5 {
   text-align: center;
+  color: rgb(80, 60, 31);
+  font-family: "Mitr", sans-serif, cursive;
+  text-transform: uppercase;
 }
 #quienesSomos .card {
   margin: 5px;
   min-width: 250px;
+  background-color: rgb(238, 229, 212);
+  padding: 5px;
 }
-#quienesSomos .card .card-body .staff {
-  background-image: url(../Img/avatar-persona.png);
+#quienesSomos .card .card-body .card-header {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100px;
-  background-size: contain;
-  text-align: center;
-  padding-top: 10px;
+  height: 70px;
+  background-color: rgb(238, 229, 212);
+  padding: 0;
 }
 #quienesSomos .card .card-body .card-title {
-  font-family: "Anton", sans-serif;
-  font-size: 20px;
+  font-family: "Mitr", sans-serif, cursive;
+  font-size: 22px;
+  font-weight: bolder;
+  letter-spacing: 1px;
   color: rgb(240, 125, 16);
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 1px black;
+  text-align: center;
+  align-self: center;
+  padding-left: 10px;
 }
 #quienesSomos .card .card-body .card-text {
   padding-top: 5px;
@@ -471,13 +487,16 @@ marquee p {
 @keyframes agrandar {
   0% {
     z-index: 1;
-    transform: scale3d(1, 1, 1);
-    transform: rotate(20deg);
+  }
+  50% {
+    z-index: 1;
+    transform: scale3d(1.05, 1.05, 1.05);
+    transform: rotate(8deg);
   }
   100% {
     z-index: 1;
     transform: rotate(0deg);
-    transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale(1.11, 1.11);
   }
 }
 

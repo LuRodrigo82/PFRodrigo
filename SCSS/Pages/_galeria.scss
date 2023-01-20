@@ -1,8 +1,14 @@
-#galeriaFotos{
+#galeriaFotos{    
+    .row {
+        justify-content: space-evenly;
+        align-content: space-evenly;        
+    }    
     .foto-galeria {    
         @extend .imagen-gral;        
         height: 250px;         
-        border-radius: 5%;        
+        border-radius: 5%;          
+        margin: 10px;
+        background-color: $color-beige-claro;
     }
     .foto-galeria:hover{
         animation-name: agrandar;
