@@ -9,6 +9,16 @@
         font-weight: bold;
     }
 
+    textarea:focus,
+    input:focus,
+    input[type]:focus,
+    select:focus,
+    button:focus {
+        border-color: $color-verde;
+        box-shadow: 0 1px 1px $color-verde inset, 0 0 8px $color-naranja ;
+        outline: 0 none;
+    }
+
     .form-check-label {
         font-weight: lighter;
     }
