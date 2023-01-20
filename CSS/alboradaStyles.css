@@ -387,6 +387,9 @@ marquee p {
   box-shadow: 0 1px 1px rgb(91, 134, 0) inset, 0 0 8px rgb(240, 125, 16);
   outline: 0 none;
 }
+#contacto button:active {
+  transform: scale(1.1, 1.1);
+}
 #contacto .form-check-label {
   font-weight: lighter;
 }
