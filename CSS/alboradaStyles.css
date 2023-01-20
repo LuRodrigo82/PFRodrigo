@@ -390,6 +390,7 @@ marquee p {
   border-color: rgb(240, 125, 16);
   color: rgb(240, 125, 16);
   font-family: "Mitr", sans-serif, cursive;
+  text-shadow: 1px 1px black;
 }
 #contacto .info-alborada {
   padding-top: 30px;
